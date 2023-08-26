@@ -1,0 +1,57 @@
+{
+    "editor.bracketPairColorization.enabled": false,
+    "editor.fontSize": 15,
+    "[python]": {
+        "editor.fontFamily": "'Comic Code Ligatures', Consolas, 'Courier New', monospace",
+        "editor.fontLigatures": true,
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.autopep8",
+    },
+    "[cpp]": {
+        "editor.fontFamily": "MonoLisa"
+    },
+    "[c]": {
+        "editor.fontFamily": "MonoLisa"
+    },
+    "[go]": {
+        "editor.fontFamily": "MonoLisa"
+    },
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "MonoLisa",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "workbench.colorTheme": "Monokai Vibrant Amped",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "python.defaultInterpreterPath": "C:\\Users\\quick_one\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "files.autoSave": "onFocusChange",
+    "markdown.replaceSmartQuotes": true,
+    "markdownlint.customRules": [
+        "{docsmsft.docs-linting}/markdownlint-custom-rules/rules.js"
+    ],
+    "markdownlint.config": {
+        "MD028": false,
+        "MD025": {
+            "front_matter_title": ""
+        }
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "yaml": false,
+        "python": true,
+        "c": true,
+        "html": true,
+        "cpp": true,
+        "json": true
+    },
+    "notebook.lineNumbers": "on",
+    "jupyter.askForKernelRestart": false,
+    "redhat.telemetry.enabled": false,
+    "editor.minimap.enabled": false,
+    "remote.SSH.remotePlatform": {
+        "172.24.16.128": "linux"
+    },
+}
