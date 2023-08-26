@@ -1,0 +1,27 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+      "key": "ctrl+r",
+      "command": "workbench.action.terminal.sendSequence",
+      "when": "editorLangId == python",
+      "args": {
+        "text": "cat .\\in.txt | python ${file} > .\\out.txt\n"
+      }
+    },
+    {
+      "key": "ctrl+r",
+      "command": "workbench.action.terminal.sendSequence",
+      "when": "editorLangId == cpp",  
+      "args": {
+        "text": "g++ ${file}\n"
+      }
+    },
+    {
+      "key": "ctrl+r",
+      "command": "workbench.action.terminal.sendSequence",
+      "when": "editorLangId == java",
+      "args": {
+        "text": "cat .\\in.txt | java ${file} > .\\out.txt\n"
+      }
+    }
+  ]
