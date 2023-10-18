@@ -5,7 +5,6 @@
 ### SET one element and SUM queries
 
 ```cpp
-
 struct segtree {
     int size;
     vector<long long> sums;
@@ -61,7 +60,7 @@ struct segtree {
         build(a, 2 * x + 2, m, rx);
         sums[x] = sums[2 * x + 1] + sums[2 * x + 2];
     }
-    
+
     void build(vector<int> &a) {
         build(a, 0, 0, size);
     }
@@ -220,8 +219,6 @@ struct segtree {
 };
 ```
 
-
-
 ### TRAVERSING Segment Trees
 
 - Finding the the first k th one index in binary array. Uses SUM sts. 
@@ -233,37 +230,36 @@ struct segtree {
         }
         int m = (lx + rx) / 2;
         int sl = sums[2 * x + 1];
- 
+
         if (index < sl) {
             return query(index, 2 * x + 1, lx, m);
         } else {
             return query(index - sl, 2 * x + 2, m, rx);
         }
     }
- 
+
     int query(int index) {
         return query(index, 0, 0, size);
     } 
 ```
 
 - Finding the the first index where number is $\ge x$ . Uses MAX sts
-  
-  ```cpp
-      int query(int index, int x, int lx, int rx) {
+
+```cpp
+    int query(int index, int x, int lx, int rx) {
           if (rx - lx == 1) {
               return lx;
           }
           int m = (lx + rx) / 2;
           int sl = sums[2 * x + 1];
-   
+
           if (index < sl) {
               return query(index, 2 * x + 1, lx, m);
           } else {
               return query(index - sl, 2 * x + 2, m, rx);
           }
       }
-   
+
       int query(int index) {
-          return query(index, 0, 0, size);
-      }
-  ```
+          return query(index, 0, 
+```
