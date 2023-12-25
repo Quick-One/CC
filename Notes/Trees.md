@@ -1,5 +1,3 @@
 # Trees
 
-
-
 range minimum query
